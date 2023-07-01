@@ -138,6 +138,14 @@ a {
 	100% { opacity: 1; }
 }
 
+.resume-button {
+  border-color: green;
+}
+
+.resume-button:hover{
+  border-color: green;
+}
+
 .seperator {
 	border-top: 1px solid grey;
 }
