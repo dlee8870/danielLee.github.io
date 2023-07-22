@@ -14,6 +14,7 @@
   display: block;
 }
 
+
 li { 
   display: table-cell; 
   position: relative; 
@@ -25,6 +26,17 @@ a {
   display: inline-block;
   position: relative;
 }
+
+.navbar-nav .nav-item .nav-link{
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.nav-link {
+  font-size: 30px;
+  color: #fff;
+}
+
 .nav-link:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -32,11 +44,16 @@ a {
   display: block;
   height: 2px;
   left: 50%;
-  position: absolute;
-  background: #fff;
+  /* position: absolute; */
+  background: #ffc107;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
+.nav-link:hover {
+  color: #28a745
+}
+
 .nav-link:hover:after { 
   width: 100%; 
   left: 0; 
@@ -47,13 +64,16 @@ a {
 	}
 }
 
+
+
 .daniel-intro {
   font-size: 60px;
-  padding-top: 110px;
+  left: 150px;
 }
 
 .daniel-portrait {
-  margin-top: 125px;
+  bottom: 50px;
+  right: 50px;
 }
 
 .scroll-more {
@@ -138,11 +158,11 @@ a {
 	100% { opacity: 1; }
 }
 
-.resume-button {
+.resume-button{
   border-color: green;
 }
 
-.resume-button:hover{
+.resume-button:hover {
   border-color: green;
 }
 
