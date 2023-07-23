@@ -20,6 +20,7 @@ li {
   position: relative; 
   padding: 8px 0;
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -27,15 +28,23 @@ a {
   position: relative;
 }
 
-.navbar-nav .nav-item .nav-link{
+.navbar-nav .nav-item .nav-link {
   padding-left: 0;
   padding-right: 40px;
 }
+
 
 .nav-link {
   font-size: 30px;
   color: #fff;
 }
+
+.navbar-nav .nav-item .nav-link-home {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+
 
 .nav-link:after {    
   background: none repeat scroll 0 0 transparent;
@@ -51,7 +60,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #28a745
+  color: #28a745;
 }
 
 .nav-link:hover:after { 
@@ -82,10 +91,10 @@ a {
 }
 
 .icon-scroll {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-  	width: 1em;
+  position: absolute;
+	/* top: 50%;
+	left: 50%; */
+  width: 1em;
 	height: 3.125em;
 	transform: translateX(-50%) scale(2);
 	z-index: 99999;
