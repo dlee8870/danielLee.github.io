@@ -14,6 +14,34 @@
   display: block;
 }
 
+/* New Project Card for AI-Message */
+.ai-message {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: white;
+    height: 600px;
+}
+
+.ai-message .languages {
+    border-radius: 6px;
+}
+
+.info {
+    height: 165px;
+}
+
+.ai-message-pic {
+  height: 200px;
+  overflow: hidden;
+}
+
+.ai-message-pic img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 li { 
   display: table-cell; 
@@ -226,6 +254,17 @@ a {
   align-items: center;
   justify-content: center;
   color: black;
+  text-align: center; /* Center-align text within the box */
+  overflow: hidden; /* Ensure content stays within the box */
+}
+
+.box h6 {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if text overflows */
 }
 
 .logo {
@@ -288,3 +327,73 @@ linkedin-link:hover {
   text-decoration: none;
 }
 
+/* General mobile adjustments */
+@media (max-width: 768px) {
+  .section-1, .section-2 {
+      height: auto; /* Allow sections to adjust based on content */
+      padding: 20px; /* Add padding for spacing */
+  }
+
+  .daniel-portrait {
+      right: 0;
+      margin-bottom: 20px;
+  }
+
+  .daniel-intro {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      left: 0;
+      text-align: center;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      font-size: 1.2rem;
+      padding: 10px; /* Adjust padding */
+  }
+
+  /* Center the About and Skills sections in mobile */
+  .about-me-div, .skills-div {
+      text-align: center;
+  }
+
+  .about-me-div {
+      font-size: 1rem;
+      padding-bottom: 20px;
+  }
+
+  .grid-box {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
+      gap: 10px; /* Add spacing between items */
+  }
+
+  /* Adjust boxes to fit mobile */
+  .box {
+      width: 80px;
+      height: 80px;
+  }
+
+  .logo {
+      width: 40px;
+      height: 40px;
+  }
+
+  .lost-knight, .steam-waiter, .ai-message {
+      width: 100%; /* Make project cards full width */
+      margin-bottom: 20px;
+  }
+
+  /* Adjust the height of the project image sections */
+  .lost-knight-pic, .steam-waiter-pic, .ai-message-pic {
+      height: auto;
+  }
+
+  /* Adjust the scrolling info text for mobile */
+  .info, .waiter-info {
+      height: auto;
+  }
+
+  /* Contact section alignment for mobile */
+  #contact {
+      text-align: center;
+  }
+}
